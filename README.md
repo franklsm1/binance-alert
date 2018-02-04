@@ -2,26 +2,21 @@ A Node-RED app/bot that polls the Binance API every minute (configureable) to ch
 
 ## Prerequisites
 - basic knowledge around opening up and using a terminal
+- git command line utility installed
 - node v6 and up installed (verify using `node -v` command)
 - npm v3.10 and up installed (verify using `npm -v` command)
 
-**Note:** You can download and install the latest version of node and npm from [here](https://nodejs.org/en/download/) if you do not have them installed
+**Note:** You can download and install the latest version of node and npm from [here](https://nodejs.org/en/download/) or the git CLI from [here](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git) if you do not have them installed
 
-## Getting Node-RED instance running locally
-Run the following commands:
-1. `npm install -g node-red`
-2. `cd ~/.node-red`
-3. `npm install node-red-node-twilio` (needed to add twilio nodes)
-4. `node-red`
+## Getting Binance Alerts bot installed and running locally
+#### 1.) Run the following commands so install and start the app:
+1. `git clone https://github.com/franklsm1/binance-alert.git`
+2. `npm install`
+3. `npm start`
 
 Then visit: http://localhost:1880
 
-## Binance Alerts Bot Import and Setup
-#### 1.) Copy the contents of [nodes.json](../master/nodes.json) into your Node-RED editor using the import clipboard feature.
-
-![alt tag](https://github.com/franklsm1/SlackChannelBot/blob/master/import.PNG)
-
-##### After importing your flow should look similar to this:
+##### Your Node-RED instance should look similar to this:
 ![alt tag](../master/exampleFlow.png)
 
 #### 2.) Add your twilio credentials and configure the twilio node
@@ -33,7 +28,7 @@ Then visit: http://localhost:1880
  
  **Note:** You can sign up for a free twilio trial account [here](https://www.twilio.com/try-twilio). You get free text messages with "Sent from your Twilio trial account - " prefixed to ll of your messages, which is no big deal.
 
-#### 3.) Finally deploy the application and your binance alert bot is up and running!
+#### 3.) Deploy the application and your binance alert bot is wired up and running!
 **Example:**
 
 ![alt tag](../master/image.png)
