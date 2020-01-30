@@ -18,7 +18,7 @@
   },
   "homepage": "https://github.com/franklsm1/binance-alert#readme",
   "dependencies": {
-    "node-red": "^0.18.1",
+    "node-red": "^0.20.8",
     "node-red-node-twilio": "^0.0.15"
   }
 }
